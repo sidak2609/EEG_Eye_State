@@ -16,7 +16,8 @@ In this python file, I've used a Fitness Function to optimize the parameters.
 The dataset for the project has been downloaded from the UCI Machine Learning Repository.
 [https://archive.ics.uci.edu/ml/datasets/Room+Occupancy+Estimation](https://archive.ics.uci.edu/ml/datasets/Room+Occupancy+Estimation)
 
-This dataset is used for estimating the precise number of occupants in a room using multiple non-intrusive environmental sensors like temperature, light, sound, CO2 and PIR. It is a multi-variate classification Dataset.
+All data is from one continuous EEG measurement with the Emotiv EEG Neuroheadset. The duration of the measurement was 117 seconds. The eye state was detected via a camera during the EEG measurement and added later manually to the file after analysing the video frames. '1' indicates the eye-closed and '0' the eye-open state. All values are in chronological order with the first measured value at the top of the data.
+
 
 Number of Instances: 14980
 
@@ -24,25 +25,17 @@ Number of Attributes: 15
 
 ## Final Result Table
 
-| Sample | Best Accuracy | Best Kernel |	Best Nu |	Best Epsilon |
-| 0 |	1	| 0.54 |	sigmoid |	5.90 |	1.90 |
-| 1	| 2	| 0.56 | rbf | 4.71	| 0.52 | 
-| 2	| 3	| 0.55 | linear	| 1.19	| 0.14 | 
-| 3	| 4	| 0.55 | sigmoid	| 7.24	| 3.44 | 
-| 4	| 5	| 0.88 | rbf	| 0.18	| 0.69 | 
-| 5	| 6	| 0.55 | sigmoid	| 9.59	| 0.65 | 
-| 6	| 7	| 0.53 | linear	| 0.43	| 3.08 | 
-| 7	| 8	| 0.54 | rbf	| 2.61	| 3.11 | 
-| 8	| 9	| 0.54 | linear	| 7.76	| 0.62 | 
-| 9	| 10| 0.56 | sigmoid	| 0.56	| 3.40|  
+![image](https://user-images.githubusercontent.com/74672533/233187889-9c0fff68-1a19-4555-b458-0749af10c32f.png)
+
 
 ## Convergence Graph
-![graph](https://user-images.githubusercontent.com/72306997/233000047-3bbc6cf2-8ec0-4276-8519-17da7da2fb25.png)
+![image](https://user-images.githubusercontent.com/74672533/233188106-8606f383-51c1-460f-9edc-3c755e38a913.png)
+
 
 ## Discussion
 From the above graph, we can conclude that the model is well trained and parameter have been optimized due to the less gap between training and cross-validation curve.
 
-The graph is made for the sample which has best accuracy. Sample 9 has the best accuracy of 0.97 having kernel = Poly, Nu = 1.27 and Epsilon = 6.87.
+The graph is made for the sample which has best accuracy. Sample 5 has the best accuracy of 0.88 having kernel = rbf, Nu = 0.18 and Epsilon = 0.69.
 
 ## Written By
 Name : Sidak Khotra
